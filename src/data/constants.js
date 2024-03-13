@@ -246,7 +246,7 @@ export const Bio = {
           "Enhanced user experience with personalized recommendations and interactive shopping features."
  ],
       image:
-        "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+        "https://github.com/patilvivek643/Full-Stack-Ecommerce/assets/106394127/95e7e196-dca0-42fb-8f6a-84e63763dc13",
       tags: [
         "Javascript",
         "Node Js",
@@ -259,29 +259,21 @@ export const Bio = {
         "JWT",
       ],
       category: "web app",
-      github: "",
+      github: "https://github.com/patilvivek643/Full-Stack-Ecommerce.git",
       webapp: "",
     },
     {
       id: 0,
-      title: "Podstream",
-      date: "Apr 2023 - May 2023",
+      title: "CRM Backend",
+      date: "Jan 2024 - Feb 2024",
       description:
-        "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+        "Orchestrated a customer relationship management application that enables users to raise tickets for feedback and reporting.",
       image:
-        "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
-      tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+        "https://wallpapers.com/images/hd/plain-black-background-02fh7564l8qq4m6d.jpg",
+      tags: [ "JS","MongoDb", "Node Js", "Express Js", "Redux","JWT","Bcrypt","Postman"],
       category: "web app",
-      github: "https://github.com/rishavchanda/Podstream",
-      webapp: "https://podstream.netlify.app/",
-      member: [
-        {
-          name: "Vivek Patil",
-          img: "",
-          linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-          github: "https://github.com/rishavchanda/",
-        }
-      ],
+      github: "https://github.com/patilvivek643/crm-app.git",
+      webapp: "",
     },
     {
       id: 1,
