@@ -125,10 +125,15 @@ const ContactButton = styled.input`
 const Contact = () => {
   // Hooks
   const [open, setOpen] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
   const form = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!form.current.checkValidity()) {
+      setErrorMessage('Please fill out all required fields.');
+      return;
+    }
     emailjs.sendForm('service_bc1ex2x', 'template_6z0gtan', form.current, 'lGdMqj_9Zi--Fproi')
       .then((result) => {
         setOpen(true);
@@ -145,10 +150,10 @@ const Contact = () => {
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" />
+          <ContactInput placeholder="Your Email" name="from_email" required/>
+          <ContactInput placeholder="Your Name" name="from_name" required/>
+          <ContactInput placeholder="Subject" name="subject" required/>
+          <ContactInputMessage placeholder="Message" rows="4" name="message" required/>
           <ContactButton type="submit" value="Send" />
         </ContactForm>
         <Snackbar
@@ -157,6 +162,13 @@ const Contact = () => {
           onClose={() => setOpen(false)}
           message="Email sent successfully!"
           severity="success"
+        />
+        <Snackbar
+          open={errorMessage !== ''}
+          autoHideDuration={6000}
+          onClose={() => setErrorMessage('')}
+          message={errorMessage}
+          severity="error"
         />
       </Wrapper>
     </Container>
