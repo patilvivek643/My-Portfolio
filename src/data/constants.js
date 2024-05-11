@@ -9,7 +9,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/patilvivek643",
   resume:
-    "https://drive.google.com/file/d/115xg_oUVAM0qWFKokCrOd62QLMbIrMrm/view?usp=sharing",
+    "https://drive.google.com/file/d/13WkGaN1E3v3hLxMB8f0XBtdF-aC9ZZu3/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/vivek-patil-648b82231/",
 
 };
@@ -169,7 +169,7 @@ export const experiences = [
     img: "https://media.licdn.com/dms/image/D4D0BAQFsKCE82AoD_Q/company-logo_200_200/0/1689287580187?e=1712188800&v=beta&t=2Dx_txQMNimlISJbe6A30_P5NdKUOglz-1OBezzVa4Q",
     role: "Fullstack Developer Intern",
     company: "Excelerate Pvt. Ltd.",
-    date: "April 2023 - Aug 2023",
+    date: "May 2023 - Oct 2023",
     desc: ["Developed and executed front-end website architecture",
       "Created and managed servers and databases to support website functionalit",
       "Designed and developed APIs to enable seamless data exchange between front-end and back-end systems",
